@@ -56,7 +56,7 @@ while True:
     faces = face_cascade.detectMultiScale(img_f_disp, scaleFactor=1.05, minNeighbors=5) #список координат получается
     for (x, y, wi, he) in faces:
         cv2.rectangle(img, (x, y), (x + wi, y + he), (0,0,255), 5)
-    cv2.imshow('CAM', img)
+    cv2.imshow('CAMERA', img)
     cv2.waitKey()
     #if cv2.waitKey(10) == 27:
         #break
